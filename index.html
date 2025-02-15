@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portafolio de Jorge Hernan Trujillo Sanchez</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Aquí puedes agregar un archivo CSS para personalizar el diseño -->
+    <link rel="stylesheet" href="styles.css"> <!-- Si tienes un archivo CSS -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -33,6 +33,9 @@
         }
         header p {
             font-size: 1.2em;
+            max-width: 900px; /* Reducir el ancho */
+            text-align: justify; /* Justificar texto */
+            margin: 0 auto; /* Centrado */
         }
         .container {
             width: 80%;
@@ -52,6 +55,14 @@
             text-decoration: none;
             color: #3498db;
         }
+        .projects {
+            display: block; /* Cambiar de flex a bloque para que no se quede en la misma fila */
+            margin-top: 30px;
+        }
+        .projects h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
         .projects .project {
             background-color: #fff;
             padding: 15px;
@@ -59,7 +70,8 @@
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
-            width: 200px;
+            width: 80%;
+            margin: 20px auto;
         }
         .projects .project img {
             width: 100%;
@@ -84,7 +96,6 @@
         <!-- Imagen de perfil -->
         <img src="yo.jpg" alt="Jorge Hernan Trujillo Sanchez"> <!-- Aquí usas la imagen 'yo.jpg' -->
         <h1>Jorge Hernan Trujillo Sanchez</h1>
-        <p>Data Analyst & Data Scientist</p>
         <p>I am a Data Analyst and Data Scientist with a background in Industrial Engineering and a specialization in Applied Statistics. I have extensive experience in project management and customer service, developing analysis to support decision-making. Throughout my career, I have focused on understanding how data can be used to solve business problems and enhance decision-making processes.</p>
     </header>
 
@@ -97,12 +108,14 @@
             </div>
         </section>
 
+        <!-- Título de Projects y los proyectos debajo -->
         <section class="projects">
             <h2>Projects</h2>
             <div class="project">
                 <h3>Pharmacy Expense Projections with Machine Learning</h3>
                 <p>In this project, I used machine learning techniques to predict pharmacy expenses in Colombia. The analysis aims to help businesses forecast future costs and optimize their budgets. The project was built using Python and machine learning algorithms.</p>
-                <a href="https://jorgetrujillo97.github.io/Pharmacy-Expense-Projections-with-Machine-Learning-A-Analysis-for-Colombia/" target="_blank">View Project</a>
+                <img src="Drugstore.jpg" alt="Drugstore Project Image"> <!-- Imagen del proyecto -->
+                <a href="https://github.com/JorgeTrujillo97/Pharmacy-Expense-Projections-with-Machine-Learning-A-Analysis-for-Colombia" target="_blank">View Project</a>
             </div>
         </section>
     </div>
