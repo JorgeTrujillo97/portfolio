@@ -1,129 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Jorge Hernán Trujillo Sánchez - Portafolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #f4f4f4;
+            line-height: 1.6;
+            margin: 20px;
         }
         .container {
-            width: 80%;
+            max-width: 800px;
             margin: auto;
-            overflow: hidden;
         }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77B5FE 3px solid;
+        .header, .section {
+            margin-bottom: 20px;
         }
-        header a {
-            color: #fff;
+        h1, h2, h3 {
+            color: #333;
+        }
+        a {
+            color: #0066cc;
             text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
         }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            float: right;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        .main-header {
-            text-align: center;
-            color: #fff;
-        }
-        .main-header h1 {
-            margin: 0;
-            font-size: 55px;
-        }
-        #showcase {
-            min-height: 400px;
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding-top: 30px;
-        }
-        #showcase h1 {
-            font-size: 50px;
-            margin-top: 100px;
-        }
-        #showcase p {
-            font-size: 20px;
-        }
-        .about {
-            text-align: center;
-            padding: 50px;
-        }
-        .about img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-        }
-        .contact, .projects {
-            padding: 20px;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 30px 0;
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="main-header">
-                <h1>My Portfolio</h1>
-            </div>
-        </div>
-    </header>
-    <section id="showcase">
-        <div class="container">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Discover my projects and skills</p>
-        </div>
-    </section>
-    <section class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <img src="your-photo.jpg" alt="Your Photo">
-            <p>Hi, I am [Your Name], a passionate developer proficient in Python, RStudio, SQL, and Power BI.</p>
-        </div>
-    </section>
-    <section class="projects">
-        <div class="container">
-            <h2>My Projects</h2>
+    <div class="container">
+        <header class="header">
+            <h1>Jorge Hernán Trujillo Sánchez</h1>
+        </header>
+        <section class="section">
+            <h2>Sobre mí</h2>
+            <p>Soy un <strong>Data Analyst</strong> y <strong>Data Scientist</strong> con estudios en <strong>Ingeniería Industrial</strong> y una <strong>Especialización en Aplicación Estadística</strong>. Tengo una amplia experiencia en gestión de proyectos y servicio al cliente, desarrollando análisis para la toma de decisiones. A lo largo de mi carrera, he aprendido cómo los datos pueden ser utilizados para resolver problemas empresariales y tomar decisiones informadas.</p>
+        </section>
+        <section class="section">
+            <h2>Habilidades</h2>
             <ul>
-                <li>Project 1 - Description</li>
-                <li>Project 2 - Description</li>
-                <li>Project 3 - Description</li>
+                <li><strong>Python</strong></li>
+                <li><strong>R Studio</strong></li>
+                <li><strong>SQL</strong></li>
+                <li><strong>Power BI</strong></li>
             </ul>
-        </div>
-    </section>
-    <section class="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: [your.email@example.com]</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Your LinkedIn Profile</a></p>
-            <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">Your GitHub Profile</a></p>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 My Portfolio</p>
-        </div>
-    </footer>
+        </section>
+        <section class="section">
+            <h2>Contacto</h2>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jorgetrujillo97" target="_blank">www.linkedin.com/in/jorgetrujillo97</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/JorgeTrujillo97" target="_blank">https://github.com/JorgeTrujillo97</a></p>
+        </section>
+        <section class="section">
+            <h2>Proyectos Realizados</h2>
+            <div class="project">
+                <h3>Proyecto 1: Título del Proyecto</h3>
+                <img src="URL_DE_LA_IMAGEN" alt="Imagen del Proyecto" style="max-width:100%;">
+                <p><strong>Descripción:</strong> Una breve descripción del proyecto, destacando sus objetivos y resultados.</p>
+            </div>
+            <div class="project">
+                <h3>Proyecto 2: Título del Proyecto</h3>
+                <img src="URL_DE_LA_IMAGEN" alt="Imagen del Proyecto" style="max-width:100%;">
+                <p><strong>Descripción:</strong> Una breve descripción del proyecto, destacando sus objetivos y resultados.</p>
+            </div>
+            <div class="project">
+                <h3>Proyecto 3: Título del Proyecto</h3>
+                <img src="URL_DE_LA_IMAGEN" alt="Imagen del Proyecto" style="max-width:100%;">
+                <p><strong>Descripción:</strong> Una breve descripción del proyecto, destacando sus objetivos y resultados.</p>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
