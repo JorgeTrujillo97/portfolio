@@ -3,73 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jorge Hernán Trujillo Sánchez - Portafolio</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portafolio de Jorge Hernan Trujillo Sanchez</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Aquí puedes agregar un archivo CSS para personalizar el diseño -->
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2C3E50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header img {
+            width: 150px; /* Ajusta el tamaño de tu imagen */
+            height: 150px; /* Ajusta el tamaño de tu imagen */
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
         }
         .container {
-            max-width: 800px;
-            margin: auto;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
         }
-        .header, .section {
-            margin-bottom: 20px;
+        section {
+            padding: 20px;
         }
-        h1, h2, h3 {
-            color: #333;
+        .contact, .projects {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
         }
-        a {
-            color: #0066cc;
+        .contact a, .projects a {
+            margin: 0 10px;
             text-decoration: none;
+            color: #3498db;
         }
-        a:hover {
-            text-decoration: underline;
+        .projects .project {
+            background-color: #fff;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 200px;
+        }
+        .projects .project img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .projects .project h3 {
+            margin-top: 10px;
+        }
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
+    <header>
+        <img src="tu-imagen.jpg" alt="Jorge Hernan Trujillo Sanchez"> <!-- Aquí coloca el nombre o ruta de tu imagen -->
+        <h1>Jorge Hernan Trujillo Sanchez</h1>
+        <p>Data Analyst & Data Scientist</p>
+        <p>I am a Data Analyst and Data Scientist with a background in Industrial Engineering and a specialization in Applied Statistics. I have extensive experience in project management and customer service, developing analysis to support decision-making. Throughout my career, I have focused on understanding how data can be used to solve business problems and enhance decision-making processes.</p>
+    </header>
+
     <div class="container">
-        <header class="header">
-            <h1>Jorge Hernán Trujillo Sánchez</h1>
-        </header>
-        <section class="section">
-            <h2>Sobre mí</h2>
-            <p>Soy un <strong>Data Analyst</strong> y <strong>Data Scientist</strong> con estudios en <strong>Ingeniería Industrial</strong> y una <strong>Especialización en Aplicación Estadística</strong>. Tengo una amplia experiencia en gestión de proyectos y servicio al cliente, desarrollando análisis para la toma de decisiones. A lo largo de mi carrera, he aprendido cómo los datos pueden ser utilizados para resolver problemas empresariales y tomar decisiones informadas.</p>
-        </section>
-        <section class="section">
-            <h2>Habilidades</h2>
-            <ul>
-                <li><strong>Python</strong></li>
-                <li><strong>R Studio</strong></li>
-                <li><strong>SQL</strong></li>
-                <li><strong>Power BI</strong></li>
-            </ul>
-        </section>
-        <section class="section">
-            <h2>Contacto</h2>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jorgetrujillo97" target="_blank">www.linkedin.com/in/jorgetrujillo97</a></p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/JorgeTrujillo97" target="_blank">https://github.com/JorgeTrujillo97</a></p>
-        </section>
-        <section class="section">
-            <h2>Proyectos Realizados</h2>
-            <div class="project">
-                <h3>Proyecto 1: Título del Proyecto</h3>
-                <img src="URL_DE_LA_IMAGEN" alt="Imagen del Proyecto" style="max-width:100%;">
-                <p><strong>Descripción:</strong> Una breve descripción del proyecto, destacando sus objetivos y resultados.</p>
+        <section class="contact">
+            <div>
+                <h3>Contact me:</h3>
+                <a href="https://www.linkedin.com/in/jorgetrujillo97" target="_blank">LinkedIn</a>
+                <a href="https://github.com/JorgeTrujillo97" target="_blank">GitHub</a>
             </div>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
             <div class="project">
-                <h3>Proyecto 2: Título del Proyecto</h3>
-                <img src="URL_DE_LA_IMAGEN" alt="Imagen del Proyecto" style="max-width:100%;">
-                <p><strong>Descripción:</strong> Una breve descripción del proyecto, destacando sus objetivos y resultados.</p>
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project Title 1</h3>
+                <p>A brief description of what this project is about. It could be related to data analysis, statistical modeling, or any other data-driven work you've done.</p>
+                <a href="project1_link" target="_blank">View Project</a>
             </div>
+
             <div class="project">
-                <h3>Proyecto 3: Título del Proyecto</h3>
-                <img src="URL_DE_LA_IMAGEN" alt="Imagen del Proyecto" style="max-width:100%;">
-                <p><strong>Descripción:</strong> Una breve descripción del proyecto, destacando sus objetivos y resultados.</p>
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project Title 2</h3>
+                <p>A brief description of this second project. Include any technologies or tools you used, such as Python, R, SQL, etc.</p>
+                <a href="project2_link" target="_blank">View Project</a>
             </div>
         </section>
     </div>
+
+    <footer>
+        <p>&copy; 2025 Jorge Hernan Trujillo Sanchez</p>
+    </footer>
 </body>
 </html>
+
